@@ -178,6 +178,7 @@ var config_data = `
         "p": "Parked<br>",
         "d": "Docked (Not Engaged)<br>",
         "e": "Engaged<br>",
+        "b": "Buddy Climb<br>",
         "a": "Attempted but failed<br>",
         "x": "Not attempted"
       },
