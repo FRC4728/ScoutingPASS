@@ -244,6 +244,11 @@ var config_data = `
       "gsCol": "diedOrImmobilized",
       "type": "bool"
     },
+    { "name": "Received foul(s)?",
+      "code": "rf",
+      "gsCol": "receivedFoul",
+      "type": "bool"
+    },
     { "name": "Tippy<br>(almost tipped over)",
       "code": "tip",
       "gsCol": "tippy",
