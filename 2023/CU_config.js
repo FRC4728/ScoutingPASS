@@ -219,6 +219,10 @@ var config_data = `
       "code": "die",
       "type": "bool"
     },
+    { "name": "Receieved fouls?",
+      "code": "rf",
+      "type": "bool"
+    },
     { "name": "Tippy<br>(almost tipped over)",
       "code": "tip",
       "type": "bool"
