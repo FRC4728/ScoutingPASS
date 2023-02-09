@@ -61,14 +61,6 @@ var config_data = `
       "type": "team",
       "min": 1,
       "max": 99999
-    },
-    { "name": "Auto Start Position",
-      "code": "as",
-      "gsCol": "autoStartPosition",
-      "type": "field_image",
-      "filename": "2023/field_image.png",
-      "clickRestriction": "one",
-      "shape": "circle 5 black red true"
     }
   ],
   "auton": [
@@ -83,16 +75,6 @@ var config_data = `
       "showFlip": "false",
       "showUndo": "false",
       "shape": "circle 12 black red true"
-    },
-    { "name": "Crossed Cable",
-      "code": "acc",
-      "gsCol": "autoCrossedCable",
-      "type": "bool"
-    },
-    { "name": "Crossed Charging Station",
-      "code": "acs",
-      "gsCol": "autoCrossedCharginStation",
-      "type": "bool"
     },
     { "name": "Mobility?",
       "code": "am",
@@ -113,11 +95,6 @@ var config_data = `
     }
   ],
   "teleop": [
-    { "name": "Cycle Timer",
-      "code": "tct",
-      "gsCol": "cycleTimes",
-      "type": "cycle"
-    },
     { "name": "Grid Scoring",
       "code": "tsg",
       "gsCol": "gridScoring",
@@ -131,24 +108,9 @@ var config_data = `
       "shape": "circle 12 black red true",
       "cycleTimer": "tct"
     },
-    { "name": "Feeder Count<br>(Fed another bot)",
-      "code": "tfc",
-      "gsCol": "feedCount",
-      "type": "counter"
-    },
     { "name": "Was Defended",
       "code": "wd",
       "gsCol": "wasDefended",
-      "type": "bool"
-    },
-    { "name": "Who Defended this bot<br>(Team #)",
-      "code": "who",
-      "gsCol": "defenderTeamNum",
-      "type": "text"
-    },
-    { "name": "Smart Placement<br>(creates Links)",
-      "code": "lnk",
-      "gsCol": "smartPlacement",
       "type": "bool"
     },
     { "name": "Floor Pick UP",
@@ -165,11 +127,6 @@ var config_data = `
     }
   ],
   "endgame": [
-    { "name": "Docking Timer",
-      "code": "dt",
-      "gsCol": "dockingTime",
-      "type": "timer"
-    },
     { "name": "Final Status",
       "code": "fs",
       "gsCol": "endgameStatus",
@@ -183,11 +140,6 @@ var config_data = `
         "x": "Not attempted"
       },
       "defaultValue": "x"
-    },
-    { "name": "Total # of alliance<br>robots docked/engaged",
-      "code": "dn",
-      "gsCol": "numOfRobotsDocked",
-      "type": "counter"
     }
   ],
   "postmatch": [
@@ -202,11 +154,6 @@ var config_data = `
         "x": "Not Observed"
       },
       "defaultValue": "x"
-    },
-    { "name": "Links Scored",
-      "code": "ls",
-      "gsCol": "linksScored",
-      "type": "counter"
     },
     { "name": "Defense Rating",
       "code": "dr",
@@ -226,27 +173,9 @@ var config_data = `
       "gsCol": "swerveDrive",
       "type": "bool"
     },
-    { "name": "Speed Rating",
-      "code": "sr",
-      "gsCol": "speedRating",
-      "type": "radio",
-      "choices": {
-        "1": "1 (slow)<br>",
-        "2": "2<br>",
-        "3": "3<br>",
-        "4": "4<br>",
-        "5": "5 (fast)"
-      },
-      "defaultValue":"3"
-    },
     { "name": "Died/Immobilized",
       "code": "die",
       "gsCol": "diedOrImmobilized",
-      "type": "bool"
-    },
-    { "name": "Received foul(s)?",
-      "code": "rf",
-      "gsCol": "receivedFoul",
       "type": "bool"
     },
     { "name": "Tippy<br>(almost tipped over)",
@@ -254,15 +183,9 @@ var config_data = `
       "gsCol": "tippy",
       "type": "bool"
     },
-    { "name": "Dropped Cones (>2)",
-      "code": "dc",
-      "gsCol": "droppedCones",
-      "type": "bool"
-    },
-    { "name": "Make good<br>alliance partner?",
-      "tooltip": "Would you want this robot on your alliance in eliminations?",
-      "code": "all",
-      "gsCol": "goodPartners",
+    { "name": "Dropped Pieces (>2)",
+      "code": "dp",
+      "gsCol": "droppedPieces",
       "type": "bool"
     },
     { "name": "Comments",
