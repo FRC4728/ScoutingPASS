@@ -13,14 +13,6 @@ var config_data = `
       "maxSize": 5,
       "required": "true"
     },
-    { "name": "Event",
-      "code": "e",
-      "gsCol": "event",
-      "type": "event",
-      "defaultValue": "2022carv",
-      "required": "true",
-      "disabled": "true"
-    },
     { "name": "Match #",
       "code": "m",
       "gsCol": "matchNum",
